@@ -1,6 +1,10 @@
-numpy
-streamlit
-pandas
-scikit-learn==
+streamlit==1.26.0
+pandas==2.2.1
+scikit-learn
+matplotlib
+seaborn
 xgboost
-jolib
+catboost
+shap
+mlflow
+dagshub
