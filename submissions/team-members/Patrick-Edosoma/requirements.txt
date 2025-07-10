@@ -6,3 +6,4 @@ scikit-learn==1.5.1
 scipy==1.13.1
 xgboost==3.0.0
 jolib
+requirements.txt
