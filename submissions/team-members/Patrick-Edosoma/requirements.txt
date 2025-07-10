@@ -1,7 +1,6 @@
 numpy
 streamlit
 pandas
-psutil
 scikit-learn==
 xgboost
 jolib
