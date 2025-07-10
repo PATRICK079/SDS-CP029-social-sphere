@@ -10,7 +10,7 @@ import scipy.cluster.hierarchy as sch
 
 
 # --------------------------
-df = pd.read_csv("/Users/sot/SDS-CP029-social-sphere/submissions/team-members/blake-lawall/data/Students Social Media Addiction.csv")
+df = pd.read_csv("submissions/team-members/Patrick-Edosoma/Data/Raw/Students Social Media Addiction.csv")
 df.columns = df.columns.str.lower().str.replace(' ', '_')
 
 # --------------------------
@@ -138,14 +138,14 @@ def run_clustering(df):
 # Load Models and Scalers
 @st.cache_resource
 def load_classification_model():
-    model = joblib.load("/Users/sot/SDS-CP029-social-sphere/submissions/team-members/Patrick-Edosoma/model/xgboost_classifier_mod.pkl")
-    scaler = joblib.load("preprocessor/scaler.joblib")
+    model = joblib.load("submissions/team-members/Patrick-Edosoma/model/xgboost_classifier_mod.pkl")
+    scaler = joblib.load("submissions/team-members/Patrick-Edosoma/preprocessor/scaler.joblib")
     return model, scaler
 
 @st.cache_resource
 def load_regression_model():
-    model = joblib.load("/Users/sot/SDS-CP029-social-sphere/submissions/team-members/Patrick-Edosoma/Notebooks/random_regressor_model.pkl")
-    scaler = joblib.load("/Users/sot/SDS-CP029-social-sphere/submissions/team-members/Patrick-Edosoma/Notebooks/random_forest_scaler.pkl")
+    model = joblib.load("submissions/team-members/Patrick-Edosoma/model/random_regressor_model.pkl")
+    scaler = joblib.load("submissions/team-members/Patrick-Edosoma/preprocessor/random_forest_scaler.pkl")
     return model, scaler
 
 # One-hot encoded column names expected
@@ -262,7 +262,7 @@ if menu == "Classification Task":
 
 if menu == "About App":
     st.title("Welcome to the Social Sphere App")
-    st.image("/Users/sot/SDS-CP029-social-sphere/submissions/team-members/Patrick-Edosoma/Screenshot 2025-07-09 at 21.59.03.png")#use_container_width=True)
+    st.image("submissions/team-members/Patrick-Edosoma/Screenshot 2025-07-09 at 21.59.03.png")
 
 
     st.markdown("""
