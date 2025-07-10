@@ -1,9 +1,7 @@
-numpy==1.26.4
+numpy
 streamlit
-pandas==2.2.2
-psutil==5.9.0
-scikit-learn==1.5.1
-scipy==1.13.1
-xgboost==3.0.0
+pandas
+psutil
+scikit-learn==
+xgboost
 jolib
-requirements.txt
