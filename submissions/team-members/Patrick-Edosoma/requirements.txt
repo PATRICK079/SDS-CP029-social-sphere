@@ -1,4 +1,5 @@
 numpy==1.26.4
+streamlit
 pandas==2.2.2
 psutil==5.9.0
 scikit-learn==1.5.1
